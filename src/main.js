@@ -6,6 +6,9 @@ import axios from 'axios'
 Vue.prototype.$http = axios;
 Vue.config.productionTip = false
 
+import Observer from "./observer";
+Vue.prototype.Observer = Observer;
+
 new Vue({
   router,
   store,
